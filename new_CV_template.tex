@@ -1,0 +1,275 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{hyperref}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\huge \scshape John Locke} \\ \vspace{4pt}
+     {\large \scshape Curriculum Vitae} \\
+    \vspace{-10pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan}{2020 -- 2024}
+      {B.S. in Data Science, Double Major in Economics, GPA: 3.9}{Ann Arbor, MI}
+      \resumeSubheading
+      {Yale University}{2024 -- 2026}
+      {M.S. in Statistics and Data Science}{New Haven, CT}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \begin{itemize} [itemsep=0pt, parsep=0pt]
+        \item\small \textbf{Math}: Linear Algebra, Discrete Math, Multivariate Calculus, Differential Equations, Numerical Analysis, etc.
+        \item\small \textbf{Statistics}: Data Mining and Statistical Learning, Applied Regression Analysis, Bayesian Data Analysis, etc.
+        \item\small \textbf{Others}: Data Structures and Algorithms, Computer Organization, Introduction to Autonomous Robots, etc.
+    \end{itemize}
+\vspace{-16pt}
+
+%------RESEARCH INTERESTS-------
+\section{Research Interests}
+    %\resumeSubHeadingListEnd
+    \begin{multicols}{3}  % Adjust the number "2" for the number of columns you want
+        \begin{itemize} [itemsep=0pt, parsep=0pt]
+            \item\small Statistical Genetics
+            \item\small Machine Learning
+            \item\small Deep Learning
+            \item\small Survival Analysis
+            \item\small Bayesian Statistics
+            \item\small Time Series Analysis
+        \end{itemize}
+    \end{multicols}
+\vspace{-5pt}
+
+%-----------PUBLICATION AND PREPRINTS-----------
+\section{Research Publications and Preprints}
+\begin{itemize}[itemsep=0pt, parsep=0pt]
+    \item\small Jingchen Liu and Gongjun Xu. On the Efficient Simulations for the Exponential Integrals of General H¨older Continuous Gaussian Random Fields. The ACM Transactions on Modeling and Computer Simulation, 24(2), 1-24, 2014.
+    \vspace{4pt}
+    \item\small Jingchen Liu and Gongjun Xu. On the Efficient Simulations for the Exponential Integrals of General H¨older Continuous Gaussian Random Fields. The ACM Transactions on Modeling and Computer Simulation, 24(2), 1-24, 2014.
+    \vspace{4pt}
+    \item\small Jingchen Liu and Gongjun Xu. On the Efficient Simulations for the Exponential Integrals of General H¨older Continuous Gaussian Random Fields. The ACM Transactions on Modeling and Computer Simulation, 24(2), 1-24, 2014.
+\end{itemize}
+\vspace{-18pt}
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\small Research Assistant $|$ \small PI: Dr. Laura Balzano $|$ \small Balzano Lab}{May 2020 -- August 2020}
+      {University of Michigan College of LSA}{City, State}
+      \resumeItemListStart
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\small Research Assistant $|$ \small PI: Dr. Richard Gonzalez $|$ \small Gonzalez Lab} {May 2021 -- August 2022}
+      {University of Michigan College of LSA}{City, State}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-13pt}
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Electronics Company}{May 2020 -- August 2020}
+      {Software Engineer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Startup, Inc}{May 2019 -- August 2019}
+      {Front End Developer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECT-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Cat Image Classification} $|$ \emph{Jupyter Notebook, Python, R Studio}}{Spring 2023}
+          \resumeItemListStart
+            \resumeItem{Utilized Principal Component Analysis (PCA) to reduce dimensions and trained various models, including gradient-boosted decision trees, random forests, and K Nearest Neighbor, to accurately classify images of cats. The random forest model achieved the highest accuracy at 84.7\%.}
+            \resumeItem{This project demonstrates the potential of machine learning applications in image classification, particularly for categorizing different breeds or types of cats.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------HONORS AND AWARDS---------------
+\section{Honors and Awards}
+    \resumeSubHeadingListStart
+        \resumeSubheading {Dean’s List}{2021 -- 2023}{Award for Academic Excellence}{University of Michigan College of LSA}
+        \resumeSubheading {Phi Beta Kappa}{2023}{Academic Honor Society}{University of Michigan College of LSA}
+    \resumeSubHeadingListEnd
+ \vspace{-12pt}
+ 
+%-----------INVOLVEMENT---------------
+\section{Extracurricular Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading{Crisis Text Line}{Fall 2023 -- Present}{Volunteer Crisis Counselor}{Remote}
+            \resumeItemListStart
+                \resumeItem{Provided assistance to individuals in need during nighttime hours by active listening, getting to know them, building rapport, figuring out their problems and risks, setting goals, and making personalized plans to help them.}
+                \resumeItem{Created a safe and non-judgmental environment for people in need to share their feelings and worries.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-14pt}
+ 
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Stata, R, Python, Java, SQL, C, Tableau, MATLAB, Microsoft Office} \\
+     \textbf{Technologies/Frameworks}{: Linux, GitHub, WordPress} \\
+    }}
+ \end{itemize}
+ 
+\end{document}
